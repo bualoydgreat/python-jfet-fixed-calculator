@@ -32,7 +32,7 @@ def fixed_biasing():
     Vp = float(e2.get())
     idss = float(e3.get())
     idq = round(idss*(1-(Vgg/Vp))**2, 4)
-    Vgsq = -Vgg
+    Vgsq = Vgg
     tk.Label(master, text="idq: " + str(idq) + "mA").grid(row=3,
                                                   column=1,
                                                   )
